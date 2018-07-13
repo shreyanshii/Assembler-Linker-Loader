@@ -1,0 +1,13 @@
+PUSH Dreg
+MVI Ereg, 3
+L1 PASS
+LDA 11
+ADI 1
+STA 11
+MOV Areg, Ereg
+SUI 1
+MOV Ereg, Areg
+JNZ 2
+POP Dreg
+a2 DC 0
+HLT
